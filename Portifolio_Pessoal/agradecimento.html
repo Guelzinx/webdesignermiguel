@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agradecimento</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+
+        header{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 2px;
+            border: solid 3px rgb(255, 255, 255);
+            font-style: italic;
+        }
+
+        section {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+    <h1><i>Obrigado pelo envio do seu formulário.</i></h1>
+    <p id="dados"></p>
+    </header>
+    
+    <section>
+        <img src="joinha.jpg" alt="joinha" width="25%" height="15%">
+    </section>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            // Função para decodificar os cookies
+            function decodeCookie(cookie) {
+                return decodeURIComponent(cookie.split('=')[1]);
+            }
+
+            // Obter os cookies gravados
+            var cookies = document.cookie.split(';');
+
+            // Variáveis para armazenar os valores dos cookies
+            var nome = '';
+            var email = '';
+            var msg = '';
+
+            // Iterar sobre os cookies e obter os valores desejados
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                if (cookie.startsWith('nome=')) {
+                    nome = decodeCookie(cookie);
+                } else if (cookie.startsWith('email=')) {
+                    email = decodeCookie(cookie);
+                } else if (cookie.startsWith('msg=')) {
+                    msg = decodeCookie(cookie);
+                }
+            }
+
+            // Exibir os valores no parágrafo
+            var dadosParagrafo = document.getElementById('dados');
+            dadosParagrafo.textContent = 'Nome: ' + nome + '  , Email: ' + email + '  , Mensagem: ' + msg;
+        });
+
+    </script>
+</body>
+
+</html>

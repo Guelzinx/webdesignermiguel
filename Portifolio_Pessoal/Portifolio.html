@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="portifolio.css">
+</head>
+
+<body>
+
+    <header>
+        <h1><i>Portifolio</i></h1>
+        <h1>Miguel de Souza Carneiro </h1>
+        <p>Seja bem vindo ao meu portifolio pessoal</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio"><strong>Inicio</strong></a></li>
+            <li><a href="#projetos"><strong>Projetos</strong></a></li>
+            <li><a href="#sobre"><strong>Sobre</strong></a></li>
+            <li><a href="#contato"><strong>Contato</strong></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h3>Inicío</h3>
+            <p>Olá! Meu nome é Miguel de Souza Carneiro sou um formado em <mark>Web Designer</mark> pela escola SENAI 7.91 em Botucatu,
+                com um aprendizado, muita sabedoria e aprimorado em web desenvolvimento de sistemas e criações de web
+                sites. </p>
+        </section>
+
+        <section id="projetos">
+
+            <h2>Projetos</h2>
+
+            <article>
+                <h3><i>Projeto 1</i></h3>
+                <img src="projeto1.jpg" alt="Projeto 1" width="20%" height="25%">
+                <p>Primeiro projeto no curso de desenvolvimento de sistemas, esse projeto é sobre o "float", ele insere um texto dentro de uma caixa de texto e mostra como fazer com que essa caixa flutue.</p>
+                <a target="_blank" href="https://drive.google.com/file/d/169_8wLwSgsLJKfM5azoOHXy9drhGSo4w/view?usp=sharing">Saiba mais</a>
+            </article>
+
+            <article>
+                <h3><i>Projeto 2</i></h3>
+                <img src="projeto2.jpg" alt="Projeto 2" width="20%" height="30%">
+                <p>Esse é um dos meus projetos em HTML. Este fala sobre o "layout Responsivo", nesse tema aprendemos a como personalizar a pagina e deixar ela resposiva ou seja alinhada.</p>
+                <a target="_blank" href="https://drive.google.com/file/d/1O5iC0HiXsYQiYZCHTRgzbJioaxfM4zIQ/view?usp=sharing">Saiba mais</a>
+            </article>
+
+        </section>
+
+        <section id="sobre">
+            <h3><i>Sobre</i></h3>
+            <img id="miguel" src="guuel.jpg" alt="Foto minha" width="200" height="250">
+            <p id="mg">Formado em WebDesigner Front-End pela Escola senai 7.91 - Botucatu, tenho ampla experiência com conteúdo,
+                estilização e funcionalidades.</p>
+            <p id="mg">Minhas principais habilidaddes incluem html, css e JavaScript, composto por Edição de imagem.</p>
+        </section>
+
+        <hr>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="form-contato" action="agradecimento.html" onsubmit="return validar()">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea type="mensagem" id="mensagem" name="mensagem"></textarea>
+
+                <input type="submit" value="enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Miguel de Souza Carneiro, 2023</p>
+        <ul>
+            <li><a class="linkedin" target="_blank" href="https://www.linkedin.com/gueel_souzax"></a></li>
+            <li><a class="facebook" target="_blank" href="https://www.facebook.com/Miguel Carneiro"></a></li>
+            <li><a class="whatsapp" target="_blank" href="https://www.api.whatsapp.com/send?phone=5514988180930&text=ol%C3%A1%20me%20chame%20"></a></li>
+        </ul>
+    </footer>
+
+    <script src="portifolio.js"></script>
+
+</body>
+
+</html>
